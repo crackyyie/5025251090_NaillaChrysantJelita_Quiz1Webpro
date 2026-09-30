@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="page-hero">
+        <p>get to know</p>
+        <h1>profile</h1>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="profile.html" class="active">PROFILE</a>
+            <a href="hometown.html">HOMETOWN</a>
+            <a href="localfood.html">LOCAL FOOD</a>
+            <a href="tourist.html">TOURIST PLACES</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="content-section">
+
+            <div class="section-image">
+                <img src="images/me.jpg" alt="Nailla">
+            </div>
+
+            <div class="section-text">
+                <p class="small-title">HELLO THERE</p>
+                <h2>CJ</h2>
+
+                <!--tombol tab-->
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="about">About Me</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                    <button class="tab-btn" data-tab="interest">Interest</button>
+                    <button class="tab-btn" data-tab="goal">Goal</button>
+                </div>
+
+                <!--isi tab-->
+                <div class="tab-panel active" id="about">
+                    <p>
+                        Hi! I'm Nailla, an Informatics student at Institut Teknologi
+                        Sepuluh Nopember. I enjoy learning about technology, data science,
+                        and web development.
+                    </p>
+                    <p>Outside academics, I also enjoy joining organizational and event activities.</p>
+                </div>
+
+                <div class="tab-panel" id="education">
+                    <ul class="info-list">
+                        <li><b>2025 - now</b> Informatics, Institut Teknologi Sepuluh Nopember</li>
+                        <li><b>2022 - 2025</b> Senior High School Pribadi Depok</li>
+                        <li><b>2019 - 2022</b> Junior High School Quantum Inti Indonesia</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="interest">
+                    <div class="chips">
+                        <span>Web Development</span>
+                        <span>Data Science</span>
+                        <span>Event Organizing</span>
+                        <span>Organization</span>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="goal">
+                    <ul class="info-list">
+                        <li>🎯 Become a skilled software developer</li>
+                        <li>🎯 Build useful and beautiful websites</li>
+                        <li>🎯 Keep learning and growing every day</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Nailla</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
